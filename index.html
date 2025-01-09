@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>May Project</title>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/bevacqua/dragula@3.7.3/dist/dragula.min.js"></script>
+  <!-- ?===============font================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="./imge/logo-head.jpg">
+  <!-- !===============stye================ -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bevacqua/dragula@3.7.3/dist/dragula.min.css">
+
+  <link rel="icon" href="imge/Screenshot 2024-12-07 193338.png">
+</head>
+
+<body>
+
+  <nav class="header-container justify-content-between">
+    <div class="containr-fluid">
+      <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars text-dark"></i>
+      </button>
+      <div class="collapse navbar-collapse d-lg-flex" id="navbarNavAltMarkup">
+        <div class="navbar side-menu" id="sideMenu">
+          <a class="nav-link" href="./shop.html">SHOP</a>
+          <a class="nav-link" href="./aboutUs.html">ABOUT US</a>
+          <a class="nav-link" href="./contact.html">CONTACT</a>
+        </div>
+      </div>
+    </div>
+    <div class="logo">
+      <img src="./imge/WhatsApp Image 2024-12-07 at 17.48.03_a5ad949e.jpg" class="logo-img-logo" alt="Omar Logo" />
+    </div>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="#account">ACCOUNT</a>
+        </li>
+        <li>
+          <a href="#search" id="search-icon">SEARCH
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" id="cart-icon">CART
+            <i class="fa-solid fa-cart-shopping">
+              <span> 0</span>
+            </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="Search-container">
+    <div class="d-input-search d-none" id="close-input-search" onkeyup="searchProduct()">
+      <i class="fa-solid fa-magnifying-glass glass"></i>
+      <input class="input-search" type="text" placeholder="Search..." id="search-input" />
+      <i class="fa-solid fa-xmark close" id="close-icon"></i>
+    </div>
+    <div class="search-results"></div>
+  </div>
+
+  <div class="Cart-container" id="cart-container">
+    <div class="cart-menio">
+
+      <div class="caret-imo">
+        <h3>Cart</h3>
+        <i class="fa-solid fa-xmark close" id="close-cart-minio"></i>
+      </div>
+
+      <div class="content-cart" id="content-cart"></div>
+
+      <div class="cart-total">
+        <p id="total-price">Total: 0 EGP</p>
+        <button id="email-btn" class="checkout-btn">Send Email</button>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+
+
+    <!-- <div id="preloader">
+      <span class="loader">LUNA HEALTHY......</span>
+    </div> -->
+
+
+    <div class="whatsapp" id="whatsappIcon">
+      <a href="https://wa.me/201551612195" target="_blank">
+        <i class="fa-brands fa-whatsapp fa-lg"></i>
+      </a>
+    </div>
+
+    <!-- ?===============START Header================== -->
+    <header class="carousel-container">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="background-slider ">
+          <div class="image">
+            <img src="./imge/3.jpg" alt="Image 3">
+          </div>
+          <div class="image active">
+            <img src="./imge/1.jpg" alt="Image 1">
+          </div>
+
+          <button class="arrow left">&#8592;</button>
+          <button class="arrow right">&#8594;</button>
+        </div>
+      </div>
+    </header>
+    <!-- ?===============END Header================== -->
+
+    <!-- !===============START card-box================== -->
+    <section>
+
+      <div class="START-card-box">
+        <div class="container">
+          <div class="container-Item">
+            <h2>
+              <span class="text-center"> Explore Our Products </span>
+            </h2>
+            <div class="container-text d-flex justify-content-center">
+              <p>
+                Our Signature Assorted boxes offer a mouthwatering selection
+                of chocolate covered dates, from timeless to edgy! Try our
+                golden coffee date, our timeless hazelnut, our spicy peanut,
+                and many more. Perfect to treat yourself or for gifting at
+                your next get together.
+              </p>
+            </div>
+          </div>
+          <div class="card-box pt-xl-3" id="productContainer">
+
+
+            <div class="card" data-product-name="Mcro Dates Gift Box" data-product-price="80 EGP">
+              <img src="./imge/prodact1.jpg" alt="" />
+              <div class="productItem">
+                <div class="productItemTop p-3">
+                  <h3>Mcro Dates Gift Box</h3>
+                  <span>2-piece box</span>
+                  <p>"The perfect size for giveaways to keep your event uniquely memorable."</p>
+                </div>
+                <div class="productItemBottom">
+                  <div class="productItemBottom-price">
+                    <span class="product_title--Span">Micro:</span>
+                    <span class="ProductItem__Price Price">75 EGP</span>
+                  </div>
+
+                  <div class="productItemBottom-B d-flex justify-content-around">
+                    <a class="add-cart-btn" href="#" data-id="40449805549752">
+                      ADD TO CART
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                    <!-- <a class="pro-more-btn" href="#">
+                      LEARN MORE
+                      <i class="fa-solid fa-angles-right"></i>
+                    </a> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-product-name="Miro Dates Gift Box" data-product-price="85 EGP">
+              <img src="./imge/prodact2.2.jpg" alt="" />
+              <div class="productItem">
+                <div class="productItemTop p-3">
+                  <h3>Miro Dates Gift Box</h3>
+                  <span>2-piece box</span>
+                  <p>"The perfect size for giveaways to keep your event uniquely memorable."</p>
+                </div>
+                <div class="productItemBottom">
+                  <div class="productItemBottom-price">
+                    <span class="product_title--Span">Micro:</span>
+                    <span class="ProductItem__Price Price">75 EGP</span>
+                  </div>
+
+                  <div class="productItemBottom-B d-flex justify-content-around">
+                    <a class="add-cart-btn" href="#" data-id="40449805549752">
+                      ADD TO CART
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                    <!-- <a class="pro-more-btn" href="#">
+                      LEARN MORE
+                      <i class="fa-solid fa-angles-right"></i>
+                    </a> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-product-name="Micr Dates Gift Box" data-product-price="95 EGP">
+              <img src="./imge/prodact3.jpg" alt="" />
+              <div class="productItem">
+                <div class="productItemTop p-3">
+                  <h3>Micr Dates Gift Box</h3>
+                  <span>2-piece box</span>
+                  <p>"The perfect size for giveaways to keep your event uniquely memorable."</p>
+                </div>
+                <div class="productItemBottom">
+                  <div class="productItemBottom-price">
+                    <span class="product_title--Span">Micro:</span>
+                    <span class="ProductItem__Price Price">75 EGP</span>
+                  </div>
+
+                  <div class="productItemBottom-B d-flex justify-content-around">
+                    <a class="add-cart-btn" href="#" data-id="40449805549752">
+                      ADD TO CART
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                    <!-- <a class="pro-more-btn" href="#">
+                      LEARN MORE
+                      <i class="fa-solid fa-angles-right"></i>
+                    </a> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- !===============END card-box================== -->
+
+    <!-- ?================START content_for_index================ -->
+    <section>
+      <div class="home-text-image">
+        <div class="container content_for_index">
+          <div class="almond-img">
+            <img src="./imge/almond_600x_00c4a367-b235-4847-b69b-5e9a79dcda4f_600x.webp" alt="" />
+          </div>
+
+          <div class="textItem text-white">
+            <h2>Locally Yours</h2>
+
+            <p>
+              Omar exhibits the great harmony of 'historical and modern,
+              yesterday and tomorrow.' We thoughtfully select the best local
+              ingredients to deliver a hand-crafted and unexpected taste
+              experience. This is an authentic taste of Eygpt served up with
+              spirit, taste, and vision.
+            </p>
+
+            <a href="#" class="Button black-hover Button--secondary">READ OUR STORY</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ?================END content_for_index================ -->
+
+    <!-- !================START section-intro================ -->
+    <div class="container padeng-intro">
+      <div class="Grid"></div>
+      <div class="flex-end d-flex">
+        <div class="section-intro justify-content-end">
+          <h1>Omar</h1>
+          <p class="tagline">Share the moment.<br />Follow Omar.</p>
+          <p class="description">
+            Join us to share your 'Omar Moments' and learn more about our
+            people, products, and latest recipes.
+          </p>
+          <div class="social-icons">
+            <a href="#" class="icon"> <i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"> <i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !================END section-intro================ -->
+  </main>
+
+  <!-- *=================START footer================== -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h1>Omar Dates</h1>
+          <p>Omar</p>
+        </div>
+
+        <div class="footer-newsletter">
+          <h2>Lorem ipsum dolor sit .</h2>
+
+          <form>
+            <div class="name-inputs">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </div>
+            <div class="email-input">
+              <input type="email" placeholder="Email address" />
+              <button type="submit">SIGN ME UP</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="footer-contact">
+          <h2>CONTACT US</h2>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> Lorem ipsum dolor sit amet,
+            consectetur
+          </a>
+          <a href="#"><i class="fas fa-envelope"></i> Omar mostafa.com</a>
+          <a href="https://wa.me/201551612195" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            +201551612195</a>
+        </div>
+
+        <div class="footer-social">
+          <h2>FOLLOW US ON</h2>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- *=================END footer================== -->
+
+
+  <!-- 
+   coment braivet
+<div class="footer-policies">
+                    <h2>POLICIES</h2>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+
+                action="https://formspree.io/f/xvgodqpe" method="POST"
+-->
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

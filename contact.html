@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/gh/bevacqua/dragula@3.7.3/dist/dragula.min.js"></script>
+    <!-- ?===============font================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet" />
+
+    <link rel="icon" href="./imge/logo-head.jpg">
+    <!-- !===============stye================ -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bevacqua/dragula@3.7.3/dist/dragula.min.css">
+
+    <link rel="icon" href="imge/Screenshot 2024-12-07 193338.png">
+</head>
+
+<body>
+
+    <nav class="header-container">
+        <div class="containr-fluid">
+            <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-dark"></i>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarNavAltMarkup">
+                <div class="navbar side-menu" id="sideMenu">
+                    <a class="nav-link" href="./shop.html">SHOP</a>
+                    <a class="nav-link" href="./aboutUs.html">ABOUT US</a>
+                    <a class="nav-link" href="./contact.html">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./imge/WhatsApp Image 2024-12-07 at 17.48.03_a5ad949e.jpg" class="logo-img-logo"
+                    alt="Omar Logo" />
+            </a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="#account">ACCOUNT</a>
+                </li>
+                <li>
+                    <a href="#search" id="search-icon">SEARCH
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="cart-icon">CART
+                        <i class="fa-solid fa-cart-shopping">
+                            <span> 0</span>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="Search-container">
+        <div class="d-input-search d-none" id="close-input-search" onkeyup="searchProduct()">
+            <i class="fa-solid fa-magnifying-glass glass"></i>
+            <input class="input-search" type="text" placeholder="Search..." id="search-input" />
+            <i class="fa-solid fa-xmark close" id="close-icon"></i>
+        </div>
+        <div class="search-results"></div>
+    </div>
+
+    <div class="Cart-container" id="cart-container">
+        <div class="cart-menio">
+
+            <div class="caret-imo">
+                <h3>Cart</h3>
+                <i class="fa-solid fa-xmark close" id="close-cart-menio"></i>
+            </div>
+
+            <div class="content-cart" id="content-cart"></div>
+
+            <div class="cart-total">
+                <p id="total-price">Total: 0 EGP</p>
+                <button id="checkout-btn" class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="whatsapp" id="whatsappIcon">
+        <a href="https://wa.me/201551612195" target="_blank">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+        </a>
+    </div>
+
+    <section class="section-contact-section">
+
+        <div class="container">
+            <h2 class="text-center">Get in Touch</h2>
+
+            <div class="contact-section">
+
+                <div class="form-container">
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="phone" placeholder="Phone" required>
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="content-container">
+                    <div class="content-item">
+                        <p><span>For customer feedback and other inquiries:</span></p>
+                        <p><a href="#">omarmostafa@gmail.com</a></p>
+                    </div>
+                    <div class="content-ghone">
+                        <p><span>Phone/Whatsapp:</span></p>
+                        <p><a href="https://wa.me/201551612195">+201551612195</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h1>Omar Dates</h1>
+                    <p>Omar</p>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h2>Lorem ipsum dolor sit .</h2>
+
+                    <form>
+                        <div class="name-inputs">
+                            <input type="text" placeholder="First Name" />
+                            <input type="text" placeholder="Last Name" />
+                        </div>
+                        <div class="email-input">
+                            <input type="email" placeholder="Email address" />
+                            <button type="submit">SIGN ME UP</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="footer-contact">
+                    <h2>CONTACT US</h2>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Lorem ipsum dolor sit amet,
+                        consectetur
+                    </a>
+                    <a href="#"><i class="fas fa-envelope"></i> Omar mostafa.com</a>
+                    <a href="https://wa.me/201551612195" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        +201551612195</a>
+                </div>
+
+                <div class="footer-social">
+                    <h2>FOLLOW US ON</h2>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

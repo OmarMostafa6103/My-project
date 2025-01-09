@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May Project</title>
+
+    <!-- ?===============font================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- !===============stye================ -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/aboutUs.css">
+
+
+    <link rel="icon" href="imge/Screenshot 2024-12-07 193338.png">
+
+</head>
+
+<body>
+
+    <!-- !===================START nav====================== -->
+
+    <nav class="header-container">
+        <div class="containr-fluid">
+            <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-dark"></i>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarNavAltMarkup">
+                <div class="navbar side-menu" id="sideMenu">
+                    <a class="nav-link" href="./shop.html">SHOP</a>
+                    <a class="nav-link" href="./aboutUs.html">ABOUT US</a>
+                    <a class="nav-link" href="./contact.html">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./imge/WhatsApp Image 2024-12-07 at 17.48.03_a5ad949e.jpg" class="logo-img-logo"
+                    alt="Omar Logo" />
+            </a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="#account">ACCOUNT</a>
+                </li>
+                <li>
+                    <a href="#search" id="search-icon">SEARCH
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="cart-icon">CART
+                        <i class="fa-solid fa-cart-shopping">
+                            <span> 0</span>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="Search-container">
+        <div class="d-input-search d-none" id="close-input-search" onkeyup="searchProduct()">
+            <i class="fa-solid fa-magnifying-glass glass"></i>
+            <input class="input-search" type="text" placeholder="Search..." id="search-input" />
+            <i class="fa-solid fa-xmark close" id="close-icon"></i>
+        </div>
+        <div class="search-results"></div>
+    </div>
+
+    <div class="Cart-container" id="cart-container">
+        <div class="cart-menio">
+
+            <div class="caret-imo">
+                <h3>Cart</h3>
+                <i class="fa-solid fa-xmark close" id="close-cart-menio"></i>
+            </div>
+
+            <div class="content-cart" id="content-cart"></div>
+
+            <div class="cart-total">
+                <p id="total-price">Total: 0 EGP</p>
+                <button id="checkout-btn" class="checkout-btn">Checkout</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- !===================END nav====================== -->
+
+
+    <main>
+
+        <div class="whatsapp" id="whatsappIcon">
+            <a href="https://wa.me/201551612195" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-lg"></i>
+            </a>
+        </div>
+
+        <!-- *===================START about-heder====================== -->
+        <section class="about">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <h2>Once upon Alyaa</h2>
+                    <p>
+                        Authentic, creative, and mouthwatering. Alyaa will change everything you think you know about
+                        dates.
+                        Our mission is to elevate these ancient Egyptian fruits to artisanal delicacies. Alyaa was
+                        founded
+                        by Gannate Khowailed, Ceren Gokoglu & Mona El-Halwagy, women with a passion for elevating local
+                        agriculture and farmers to a global audience. They always believed there was more potential for
+                        dates
+                        and Alyaa is their mission to fulfill Egyptian dates potential. We invite you to experience the
+                        hand-crafted gourmet enchantment of Alyaa and try the remaining <a href="#">Foodiena brands</a>.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="imge/ibrahim.jpg" alt="Founders of Alyaa">
+                </div>
+            </div>
+        </section>
+
+        <!-- *===================END about-heder====================== -->
+
+        <!-- ===================START spirit-section===========================  -->
+        <section class="spirit-section">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2 class="section-title">Local Spirit Global Spin</h2>
+                    <p class="section-description">
+                        We reflect the true Egyptian spirit; a perfect harmony of tradition and innovation.
+                        We harvest the finest, highest-quality dates across Egypt to deliver only the most exceptional
+                        tasting products,
+                        all while supporting local farmers and small businesses.
+                        Your purchase directly impacts the families who help grow and produce Alyaa dates.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="imge/about.webp" alt="Spirit Image">
+                </div>
+            </div>
+        </section>
+        <!-- ===================END  spirit-section===========================  -->
+
+        <!-- !=================START luxury-section================== -->
+        <section class="luxury-section">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2 class="section-title">Luxury means one of a kind</h2>
+                    <p class="section-description text-white">
+                        Creativity and sophistication define everything we do. Alyaa is a multi-sensory experience
+                        you have to feel to believe. From unexpected products, flavors, and design, Alyaa is here
+                        to surprise and delight the senses.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="imge/ibrahim.jpg" alt="Luxury Chocolate Dates">
+                </div>
+            </div>
+        </section>
+        <!-- !=================END luxury-section================== -->
+
+        <!-- ?===================START chef-section====================== -->
+        <section class="chef-section">
+            <h2 class="section-title">Meet Our Chef</h2>
+            <div class="chef-card">
+                <div class="chef-image">
+                    <img src="imge/ibrahim.jpg" alt="Chef Image">
+                </div>
+                <div class="chef-details">
+                    <h3 class="chef-name">ارجل من انجبت البشريه 😂😂</h3>
+                    <p class="chef-description">
+                        Heba is an artist in and out of the kitchen. She brings the Alyaa vision to life while ensuring
+                        her contemporary recipes offer an exceptional taste with every bite. Heba leverages more than a
+                        decade of experience in artisanal cuisine. She is an Egyptian soul who immersed herself in
+                        international experiences, and it is this global spirit that is reflected in Alyaa. So, while
+                        rooted in Egyptian cuisine, Alyaa benefits from Heba's global consciousness. Heba invites you to
+                        experience Alyaa - an elevated journey for Egyptian dates!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- ?===================END chef-section====================== -->
+
+        <!-- *=================START text-content==================  -->
+        <div class="section">
+            <div class="text-content">
+                <h2>Elegance for everyone</h2>
+                <p>
+                    Attractive, high-quality, elegant and pioneering, our products transcend
+                    the expected to always offer that “Wow Factor.” We are luxury redefined
+                    for a new age.
+                </p>
+            </div>
+            <div class="image-content">
+                <img src="imge/about.webp" alt="Elegance Image Grid">
+            </div>
+        </div>
+        <!-- *=================END text-content================== -->
+
+        <!-- !================START section-intro================ -->
+        <div class="container padeng-intro ">
+            <div class="Grid"></div>
+            <div class="flex-end d-flex">
+                <div class="section-intro justify-content-end ">
+                    <h1>Omar</h1>
+                    <p class="tagline">Share the moment.<br>Follow Omar.</p>
+                    <p class="description">
+                        Join us to share your 'Omar Moments' and learn more about our people, products, and latest
+                        recipes.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="icon"> <i class="fab fa-instagram"></i></a>
+                        <a href="#" class="icon"> <i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- !================END section-intro================ -->
+
+        <!-- ?================START testimonials-section================ -->
+
+        <!-- ?================END testimonials-section================ -->
+
+    </main>
+
+    <!-- *=================START footer================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h1>Omar Dates</h1>
+                    <p>Omar</p>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h2>Lorem ipsum dolor sit .</h2>
+
+                    <form> <!-- action="https://formspree.io/f/xvgodqpe" method="POST" -->
+                        <div class="name-inputs">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <div class="email-input">
+                            <input type="email" placeholder="Email address">
+                            <button type="submit">SIGN ME UP</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="footer-contact">
+                    <h2>CONTACT US</h2>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Lorem ipsum dolor sit amet, consectetur </a>
+                    <a href="#"><i class="fas fa-envelope"></i> Omar mostafa.com</a>
+                    <a href="#"><i class="fab fa-whatsapp"></i> +2010205040</a>
+                </div>
+
+                <div class="footer-social">
+                    <h2>FOLLOW US ON</h2>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+
+                <!-- <div class="footer-policies">
+                    <h2>POLICIES</h2>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div> -->
+            </div>
+
+            <div class="footer-bottom">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- *=================END footer================== -->
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

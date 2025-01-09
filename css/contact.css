@@ -1,0 +1,287 @@
+.section-contact-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact-section {
+    display: flex;
+    overflow: hidden;
+}
+
+.text-center {
+    padding-bottom: 40px;
+    font-family: "Hurricane", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 72px;
+}
+
+.form-container {
+    flex: 1;
+    padding-left: 24px;
+    box-sizing: border-box;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.form-container form input,
+.form-container form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+.content-item {
+    margin-bottom: 35px;
+}
+
+.content-container p span {
+    font-family: "Unbounded", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 34.65px;
+    color: RGB(153, 153, 153);
+}
+
+.content-container p a {
+    font-family: "Unbounded", serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 34.65px;
+    color: rgb(164, 140, 0);
+}
+
+.content-item,
+.content-ghone {
+    padding-left: 100px;
+}
+
+.form-container form textarea {
+    height: 100px;
+    resize: none;
+    overflow-y: auto;
+}
+
+.form-container form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container form button:hover {
+    background-color: rgb(164, 140, 0);
+}
+
+.content-container {
+    padding-left: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-container p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content-container a {
+    color: rgb(164, 140, 0);
+    text-decoration: none;
+}
+
+.content-container a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* لأجهزة التابلت (أقل من 1024px) */
+@media (max-width: 1024px) {
+    .section-contact-section {
+        padding: 70px 20px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-center {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .form-container {
+        width: 70%;
+        /* تحسين العرض */
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .form-container h2 {
+        font-size: 22px;
+    }
+
+    .form-container form input,
+    .form-container form textarea {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .content-container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .content-container p {
+        font-size: 14px;
+    }
+
+    .content-container p a {
+        font-size: 18px;
+    }
+}
+
+/* لأجهزة الهواتف الصغيرة (أقل من 768px) */
+@media (max-width: 768px) {
+    .section-contact-section {
+        padding: 50px 15px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-center {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .form-container h2 {
+        font-size: 20px;
+    }
+
+    .form-container form input,
+    .form-container form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .content-container {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .content-container p {
+        font-size: 14px;
+    }
+
+    .content-container p a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* حواف أصغر للتصميم */
+    .section-contact-section {
+        padding: 20px 10px;
+    }
+
+    /* توسيط المحتوى */
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* تحسين النصوص */
+    .text-center {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* الفورم */
+    .form-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .form-container form input,
+    .form-container form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .form-container form button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* تحسين النصوص في القسم السفلي */
+    .content-container p,
+    .content-container p span {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .content-container p a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* تحسين الحواف لشاشات أصغر */
+    .section-contact-section {
+        padding: 15px 5px;
+    }
+
+    .text-center {
+        font-size: 28px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-container form input,
+    .form-container form textarea {
+        font-size: 12px;
+    }
+
+    .form-container form button {
+        font-size: 14px;
+    }
+
+    .content-container p {
+        font-size: 12px;
+    }
+
+    .content-container p a {
+        font-size: 14px;
+    }
+}
